@@ -20,8 +20,8 @@ form.addEventListener('submit', (event) => {
   };
 
   storeComent(store);
-  //form.reset();
-  //window.open('../index.html', '_self');
+  form.reset();
+  window.open('../index.html', '_self');
 });
 
 function storeComent(store) {

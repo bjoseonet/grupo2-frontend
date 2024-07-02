@@ -1,32 +1,4 @@
-//const apiUrl = 'http://localhost:3000';
-
-//const { response } = require('express');
-
 var datosLogin = [];
-//var datosRegistro = [];
-
-// const renderLogin = () => {
-//   if (datosLogin.length > 0) {
-//     document.querySelector('#inputEmail').value = datosLogin[0];
-//     document.querySelector('#inputPassword').value = datosLogin[1];
-//     if (datosLogin[2] == true) {
-//       document.querySelector('#form__checkbox__login').checked = true;
-//     }
-//   }
-// };
-
-// const renderRegistro = () => {
-//   if (datosRegistro.length > 0) {
-//     document.querySelector('#inputNombre').value = datosRegistro[0];
-//     document.querySelector('#inputApellido').value = datosRegistro[1];
-//     document.querySelector('#inputCodPostal').value = datosRegistro[2];
-//     document.querySelector('#inputEmail__registro').value = datosRegistro[3];
-//     document.querySelector('#inputPassword__registro1').value =
-//       datosRegistro[4];
-//     document.querySelector('#inputPassword__registro2').value =
-//       datosRegistro[5];
-//   }
-// };
 
 const formLogin = document.querySelector('.cuadro');
 const inputEmail = document.querySelector('#inputEmail');
@@ -45,8 +17,8 @@ formLogin.addEventListener('submit', (event) => {
   if (!erroresValidacion) {
     localStorage.setItem('datosLogin', JSON.stringify(datosLogin));
     getUser(datosLogin[0], datosLogin[1]);
-    //formLogin.reset();
-    //window.open('../index.html', '_self');
+    formLogin.reset();
+    window.open('../index.html', '_self');
   }
 });
 
