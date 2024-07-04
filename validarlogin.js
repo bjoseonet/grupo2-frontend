@@ -18,7 +18,7 @@ formLogin.addEventListener('submit', (event) => {
     localStorage.setItem('datosLogin', JSON.stringify(datosLogin));
     getUser(datosLogin[0], datosLogin[1]);
     //formLogin.reset();
-    // window.open('../index.html', '_self');
+    //window.open('../index.html', '_self');
   }
 });
 
